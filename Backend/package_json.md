@@ -52,10 +52,33 @@ Tells about the project backend info
 
 
 About Middleware
-Middleware:-
-Thesse ar the functions which gets executed 
+## Middleware:-
+These ar the functions which gets executed 
 before a request is processed.In Node and Express 
-middleware can be used to check 
-. JSON body validation,
-. params validation
-and more acc to requirement
+middleware can be used to check -
+* JSON body validation,
+* params validation
+* and more acc to requirement
+
+
+## Authentication:-
+* Authentication is a step in which the user 
+needs to verify their identity.
+* For this application, the user needs to provide the 
+Email and password which it created during the 
+registration process.
+* The user will be provided a "Token" after Auth process
+
+## Authorization:-
+* Once the user authenticates, he/she is provide a "Token".
+* Now to access a resource, the user needs to show a token that 
+was sent during authentication. This ensures that he user is 
+entitled to a resource. 
+
+## JSON Web Token (JWT) :-
+* Is used to encrypt a payload into a signed token that has 
+the permission or Authorities of the user.
+
+## cookie-parser
+```"cookie-parser": "^1.4.6"```
+used to send to send the cookies from backend to the frontend.
